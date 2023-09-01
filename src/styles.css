@@ -1,0 +1,41 @@
+*,
+*::before *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.gridParent {
+  display: grid;
+  min-height: 50vh;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: 1f 3frr;
+  font-size: 1.5rem;
+}
+
+.gridChild1 {
+  background-color: #75b7cd;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.gridChild2 {
+  background-color: #ff00ff;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gridChild3 {
+  background-color: #0000fe;
+  color: white;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
